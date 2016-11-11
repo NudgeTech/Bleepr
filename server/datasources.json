@@ -1,17 +1,13 @@
 {
   "BleeprDB": {
-      "defaultForType": "mongodb",
-      "connector": "loopback-connector-mongodb",
-      "url": "mongodb://dbadmin:bleepr99@ds147537.mlab.com:47537/bleeprdb"
-
-    /*"host": "localhost",
+     "host": "localhost",
     "port": 27017,
     "url": "",
     "database": "BleeprDB",
     "password": "",
     "name": "BleeprDB",
     "user": "",
-    "connector": "mongodb"*/
+    "connector": "mongodb"
   },
   "emailDS": {
     "name": "emailDS",

@@ -1,0 +1,39 @@
+{
+  "name": "bleeprAlert",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bleeprMessage": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "createdBy": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bleeprGroups": {
+      "type": "hasAndBelongsToMany",
+      "model": "bleeprGroup",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

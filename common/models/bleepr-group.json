@@ -1,0 +1,41 @@
+{
+  "name": "bleeprGroup",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "groupName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+     "bleeprUserIds": {
+      "type": "referencesMany",
+      "model": "bleeprUser",
+      "foreignKey": "UserId"
+     
+    },
+
+    "bleeprUsers": {
+      "type": "hasAndBelongsToMany",
+      "model": "bleeprUser",
+      "foreignKey": ""
+    },
+    "bleeprAlerts": {
+      "type": "hasMany",
+      "model": "bleeprAlert",
+      "foreignKey": ""
+    },
+    "bleeprOrganisation": {
+      "type": "belongsTo",
+      "model": "bleeprOrganisation",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

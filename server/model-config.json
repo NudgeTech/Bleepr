@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "BleeprDB",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "BleeprDB",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "BleeprDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "BleeprDB",
+    "public": true
+  },
+  "Role": {
+    "dataSource": "BleeprDB",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "emailDS"
+  },
+  "bleeprUser": {
+    "dataSource": "BleeprDB",
+    "public": true
+  },
+  "bleeprOrganisation": {
+    "dataSource": "BleeprDB",
+    "public": true
+  },
+  "bleeprGroup": {
+    "dataSource": "BleeprDB",
+    "public": true
+  },
+  "bleeprAlert": {
+    "dataSource": "BleeprDB",
+    "public": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "bleeprOrganisation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "orgName": {
+      "type": "string",
+      "required": true
+    },
+    "apiKey": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bleeprUsers": {
+      "type": "hasMany",
+      "model": "bleeprUser",
+      "foreignKey": ""
+    },
+    "bleeprGroups": {
+      "type": "hasMany",
+      "model": "bleeprGroup",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -62,7 +62,7 @@ module.exports = function(app) {
   //This section will create our system user on deployment of the app
 
     //find user and check if already assigned to admin role or not
-   bleeprUser.findOne({
+  /*bleeprUser.findOne({
     where: {email: 'bleepr@gmail.com'} 
   }, function(err, user) {
       if(!user){
@@ -96,7 +96,7 @@ module.exports = function(app) {
               }
            });
       }
-  });
+  });*/
 
           
 }
